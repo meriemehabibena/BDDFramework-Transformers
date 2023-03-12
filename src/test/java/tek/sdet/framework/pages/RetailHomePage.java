@@ -2,6 +2,7 @@ package tek.sdet.framework.pages;
 
 import java.util.List;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -37,10 +38,8 @@ public class RetailHomePage extends BaseSetup {
 	
 	@FindBy(id="cartBtn")
 	public WebElement cartButton;
-	
-	@FindBy(xpath ="//img[contains(@alt, 'Pokemon')]")
-	public WebElement pokemanProductImage;
-	
+
+
 	@FindBy(xpath ="//a[text()='Account']")
 public WebElement accountOption;
 	
@@ -65,8 +64,26 @@ public WebElement accountOption;
 	@FindBy(xpath ="//span[text()='Automative']")
 	public WebElement automativeSideBar;
 	
-	@FindBy(xpath ="//div[@class='sidebar_content-item']/span")
-	public List<WebElement> sideBarOptionElements;
+	@FindBy(xpath = "//p[contains(text(),'Kasa Outdoor Smart Plug')]")
+	public WebElement CasaOutDoor;
+	
+	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[3]/div[1]/div[1]/select[1]")
+	public WebElement CartQtyBtn;
+//	/option[@value='2']
+	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[3]/div[1]/div[1]/select/option[@value='2']")
+	public WebElement CartQty;
+	
+	@FindBy(id ="addToCartBtn")
+	public WebElement addToCartBtn;
+	
+	@FindBy(id ="cartBtn")
+	public WebElement cartQuantityIcon;
+	
+	@FindBy(xpath ="//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/input[1]")
+	public WebElement QtyConfirmation;
+	
+	
+	
 	
 	
 	

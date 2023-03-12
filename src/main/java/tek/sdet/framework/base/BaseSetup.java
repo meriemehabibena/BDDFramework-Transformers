@@ -1,6 +1,7 @@
 package tek.sdet.framework.base;
 
 import java.io.FileNotFoundException;
+
 import java.util.HashMap;
 import java.util.logging.Logger;
 
@@ -47,6 +48,7 @@ public class BaseSetup {
 	public void setupBrowser() {
 		HashMap uiProperties = environmentVariables.getYamlPropperty("ui");
 		String url = uiProperties.get("url").toString().toLowerCase();
+		//System.out.println(url);
 		Browser browser;
 		switch (uiProperties.get("browser").toString().toLowerCase()) {
 		case "chrome":

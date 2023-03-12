@@ -1,11 +1,13 @@
 package tek.sdet.framework.steps;
 
 import java.util.List;
+
 import java.util.Map;
 
 import org.junit.Assert;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,12 +24,13 @@ public class SignInSteps extends CommonUtility {
 	logger.info("User clicked on Sign in Option");
 	
 	}
-	@When("User enter email {string} and password {string}")
-	public void userEnterEmailAndPassword(String emailValue, String passwordValue) {
-	sendText(factory.signInPage().emailField, emailValue);
-	sendText(factory.signInPage().passwordField, passwordValue);
-	logger.info("user entered email " + emailValue+ " and password " + passwordValue);
-
+	@And("User enter email {string} and password {string}")
+	public void userEnterEmailAndPassword(String email,String password) {
+		sendText(factory.signInPage().emailField,email);
+		sendText(factory.signInPage().passwordField,password);
+		logger.info("user entered email "+ email + " and password "+ password);
+	//	slowDown();
+		
 	}
 	@When("User click on login button")
 	public void userClickOnLoginButton() {

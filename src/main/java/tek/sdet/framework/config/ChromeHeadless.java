@@ -17,5 +17,5 @@ public class ChromeHeadless implements Browser {
 		driver.get(url);
 		return driver;
 	}
-
+	
 }

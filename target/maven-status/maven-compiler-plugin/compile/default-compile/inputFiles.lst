@@ -7,4 +7,4 @@
 /Users/meriemehabibena/eclipse-workspace/tek-bdd-framework/src/main/java/tek/sdet/framework/config/ChromeBrowser.java
 /Users/meriemehabibena/eclipse-workspace/tek-bdd-framework/src/main/java/tek/sdet/framework/config/EdgeBrowser.java
 /Users/meriemehabibena/eclipse-workspace/tek-bdd-framework/src/main/java/tek/sdet/framework/base/BaseSetup.java
-/Users/meriemehabibena/eclipse-workspace/tek-bdd-framework/src/main/java/tek/sdet/testing/utilities/CommonUtility.java
+/Users/meriemehabibena/eclipse-workspace/tek-bdd-framework/src/main/java/tek/sdet/framework/utilities/DataGeneratorUtility.java
