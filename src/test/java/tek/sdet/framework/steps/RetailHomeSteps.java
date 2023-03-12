@@ -120,4 +120,51 @@ public class RetailHomeSteps extends CommonUtility {
 			Thread.sleep(2000);
 		    
 		}
+		@Then("User click on Cart option")
+		public void user_click_on_cart_option() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("User click on Proceed to Checkout button")
+		public void user_click_on_proceed_to_checkout_button() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("User click Add a new address link for shipping address")
+		public void user_click_add_a_new_address_link_for_shipping_address() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("User fill new address form with below information")
+		public void user_fill_new_address_form_with_below_information(io.cucumber.datatable.DataTable dataTable) {
+		    // Write code here that turns the phrase above into concrete actions
+		    // For automatic transformation, change DataTable to one of
+		    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+		    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+		    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+		    //
+		    // For other transformations you can register a DataTableType.
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("User click Add a credit card or Debit Card for Payment method")
+		public void user_click_add_a_credit_card_or_debit_card_for_payment_method() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("User click on Place Your Order")
+		public void user_click_on_place_your_order() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("a message should be displayed ‘Order Placed, Thanks’")
+		public void a_message_should_be_displayed_order_placed_thanks() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
 }
